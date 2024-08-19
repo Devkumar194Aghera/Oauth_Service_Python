@@ -19,8 +19,8 @@ from redis_client import add_key_value_redis, get_value_redis, delete_key_redis
 
 from fastapi import Request
 
-CLIENT_ID = '6c389325-1d29-4072-a6f9-0a0ff019a51e'
-CLIENT_SECRET = 'c6846518-2faa-430c-9491-8aca7ffc74d8'
+# CLIENT_ID = 'XXX'
+# CLIENT_SECRET = 'XXX'
 REDIRECT_URI = 'http://localhost:8000/integrations/hubspot/oauth2callback'
 encoded_client_id_secret = base64.b64encode(f'{CLIENT_ID}:{CLIENT_SECRET}'.encode()).decode()
 
